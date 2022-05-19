@@ -1,6 +1,6 @@
 ﻿namespace MyGame.GameModel;
 
-public class Monster : ICreature
+public class Block : ICreature
 {
     public CreatureCommand Act(int x, int y)
     {
@@ -9,9 +9,9 @@ public class Monster : ICreature
     
     public string GetImageFileName()
     {
-        return "Ogre_f0.png";
+        return "floor_1.png";
     }
-
+    
     public int GetDrawingPriority()
     {
         return 1;
@@ -19,6 +19,6 @@ public class Monster : ICreature
 
     public Size GetHitbox()
     {
-        return new Size(128, 128);
+        return new Size(40, 40);
     }
 }
